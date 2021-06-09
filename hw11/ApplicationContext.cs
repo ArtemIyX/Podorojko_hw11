@@ -5,13 +5,12 @@ using System.Text;
 
 namespace hw11
 {
-    class ApplicationContext : DbContext
+    public class ApplicationContext : DbContext
     {
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Subject> Subjects { get; set; }
         public ApplicationContext()
         {
-            
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
         {

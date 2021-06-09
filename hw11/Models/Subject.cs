@@ -9,5 +9,9 @@ namespace hw11
         public int Id { get; set; }
         public string Title { get; set; }
         public virtual ICollection<Teacher> Teachers { get; set; }
+        public override string ToString()
+        {
+            return Title;
+        }
     }
 }
